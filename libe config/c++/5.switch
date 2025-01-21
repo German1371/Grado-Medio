@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main(int argc, char *argv[]) {
+	
+	int moneda;
+	
+	moneda=50;
+	
+	switch (moneda)
+	{
+	case 5:
+	case 10:
+	case 20:
+	case 50:
+		cout<<"billete pequeño"<<endl;
+		break;
+
+	case 100:
+	case 200:
+	case 500:
+			cout<<"billete grande"<<endl;
+			break;
+	default:
+		cout<<"monedas"<<endl;
+		
+	}
+		
+	
+	return 0;
+}
+

@@ -1,0 +1,23 @@
+Algoritmo sin_titulo
+	//nombre de una persona y la salida tiene que salir las iniciales
+	//ahora nos podemos encontrar que tenga muchos espacios en blanco
+	Definir ent, sal Como Caracter
+	Definir i como entero
+	
+	Escribir "introduce un nombre completo"
+	Leer ent
+	
+	long=Longitud(ent)-1
+	Para i=0 Hasta long Hacer
+		si (Subcadena(ent,i,i)<>" ") 
+			si (i=0) Entonces
+				sal=Mayusculas(Subcadena(ent,i,i))
+			SiNo
+				si SubCadena(ent,i-1,i-1)=" " Entonces
+					sal=sal+Mayusculas(Subcadena(ent,i,i))
+				FinSi
+			FinSi
+		FinSi
+	FinPara
+	Escribir "" ,sal
+FinAlgoritmo
